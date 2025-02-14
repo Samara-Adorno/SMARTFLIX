@@ -19,7 +19,6 @@
 </head>
 <body>
    <main>
-    <div class="main-container">
         <header class="header__navigation">
           <div class="navigation">
             <!-- Logo -->
@@ -27,12 +26,15 @@
           </div>
     
           <div class="header__login">
-            <button type="button" class="btn btn-outline-danger me-2"><a href="#">Entrar</a></button>
+            <button type="button" class="btn btn-danger me-2"><a href="#">Entrar</a></button>
             <button type="button" class="btn btn-danger"><a href="#">Cadastra - se</a></button>
           </div>
         </header>
-      </div>
+      
+        <!-- Banner -->
+         <img src="src/assets/icons/banner.jpg" alt="Banner" class="banner">
 
+        <!-- Mensagem -->
       <div class="mensagem">
         <h1>Aqui você terá acesso a filmes, séries e muito</h1>
         <h1>mais, sem limites!</h1>
@@ -54,45 +56,106 @@
          <div class="conteudo">
             <h1>Aqui você pode encontrar!</h1>
             <div class="carousel-container">
-                <div class="carousel-slide">
-                    <figure>
-                        <img src="./src/assets/conteudo/filmes.jpg" alt="Filmes">
-                        <figcaption>Filmes</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./src/assets/conteudo/series.jpg" alt="Séries">
-                        <figcaption>Séries</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./src/assets/conteudo/documentario.jpeg" alt="Documentários">
-                        <figcaption>Documentários</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./src/assets/conteudo/doramas.jpeg" alt="Doramas">
-                        <figcaption>Doramas</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./src/assets/conteudo/novelas.jpeg" alt="Novelas">
-                        <figcaption>Novelas</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./src/assets/conteudo/desenhos.jpeg" alt="Desenhos Animados">
-                        <figcaption>Desenhos Animados</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./src/assets/conteudo/realitys.jpeg" alt="Realitys">
-                        <figcaption>Realitys</figcaption>
-                    </figure>
+              <div class="carousel-slide">
+                  <figure>
+                      <img src="./src/assets/conteudo/filmes.jpg" alt="Filmes">
+                      <figcaption>Filmes</figcaption>
+                  </figure>
+                  <figure>
+                      <img src="./src/assets/conteudo/series.jpg" alt="Séries">
+                      <figcaption>Séries</figcaption>
+                  </figure>
+                  <figure>
+                      <img src="./src/assets/conteudo/documentarios.jpg" alt="Documentários">
+                      <figcaption>Documentários</figcaption>
+                  </figure>
+                  <figure>
+                      <img src="./src/assets/conteudo/doramas.jpg" alt="Doramas">
+                      <figcaption>Doramas</figcaption>
+                  </figure>
+                  <figure>
+                      <img src="./src/assets/conteudo/novelas.jpg" alt="Novelas">
+                      <figcaption>Novelas</figcaption>
+                  </figure>
+                  <figure>
+                      <img src="./src/assets/conteudo/desenhos.jpg" alt="Desenhos Animados">
+                      <figcaption>Desenhos Animados</figcaption>
+                  </figure>
+                  <figure>
+                      <img src="./src/assets/conteudo/realitys.jpg" alt="Realitys">
+                      <figcaption>Realitys</figcaption>
+                  </figure>
+              </div>
+              <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+              <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>                         
+
+          <!-- Motivos -->
+          <div class="motivo-container">
+            <div id="result-motivos">
+                <div class="motivo">
+                    <h1 id="greeting">Mais motivos para conhecer a SMARTFLIX</h1>
                 </div>
-                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="next" onclick="moveSlide(1)">&#10095;</button>
-            </div>            
-        
-     </div>
+
+            <!-- LIST ITEM 1 -->
+             <div class="offer_scroll-container">
+                <div class="offer_list">
+                    <section class="offer_list-item">
+                        <!-- CARD 1 -->
+                            <div class="cards">
+                              <span><h3>Aproveite na TV</h3></span>
+                              <span><p>Assista em Smart TVs, PlayStation, Xbox,Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+                              <img src="src/assets/icons/televisao.png" alt="">
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div class="cards">
+                              <span><h3>Baixe séries para assistir offline</h3></span>
+                              <span><p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                              <img src="src/assets/icons/baixando.png" alt="">
+                            </div>
+
+                            <!-- CARD 3 -->
+                            <div class="cards">
+                              <span><h3>Assista onde quiser</h3></span>
+                              <span><p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+                              <img src="src/assets/icons/smartphone.png" alt="">
+                            </div>
+
+                            <!-- CARD 4 -->
+                            <div class="cards">
+                              <span><h3>Crie um perfil e se divirta</h3></span>
+                              <span><p>Deixe a sua imaginação rolar, cadastra - se e crie um perfil, tenha conteúdos exclusivos de acordo com o seu gosto</p>
+                              <img src="src/assets/icons/perfil.png" alt="">
+                            </div>
+                         
+                    </section>
+                </div>
+             </div>
+   
+             <!-- Perguntas -->
+             <div class="faq-container">
+              <button class="toggle-button">Abrir/Fechar Todos</button>
+              <div class="faq-item">
+                  <button class="faq-question">Pergunta 1: O que é HTML?</button>
+                  <div class="faq-answer">HTML é uma linguagem de marcação usada para criar páginas da web.</div>
+              </div>
+              <div class="faq-item">
+                  <button class="faq-question">Pergunta 2: O que é CSS?</button>
+                  <div class="faq-answer">CSS é uma linguagem de estilo usada para definir a aparência das páginas da web.</div>
+              </div>
+              <div class="faq-item">
+                  <button class="faq-question">Pergunta 3: O que é JavaScript?</button>
+                  <div class="faq-answer">JavaScript é uma linguagem de programação usada para criar interatividade nas páginas da web.</div>
+              </div>
+          </div>
+
+        </div>
    </main>
     
     <!-- JavaScript -->
      <script src="JavaScript/carrossel.js"></script>
+     <script src="JavaScript/perguntas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

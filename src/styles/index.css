@@ -1,35 +1,26 @@
 body{
-    background-image: url("https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media/banner.jpg");
-    background-repeat: no-repeat;
-    background-color: #0b090a;
+    background-color: #253237;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
 }
 /* Logo */
 #logo{
-    width: 500px;
-    height: 250px;
+    width: 300px;
     margin-top: 15px;
 }
 /* HEADER */
-.main-container {
-    width: 100%;
-    margin-right: 16px;
-}
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    margin: 10px;
+    background: #212529;
 }
 
 .header__navigation .navigation {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -51,7 +42,7 @@ body{
 
 
 .header__login a {
-    color: #FFFA5A;
+    color: #a2d2ff;
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -59,10 +50,18 @@ body{
   
 /*FIM HEADER */
 
+/* Banner */
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+/* Mensagem */
 .mensagem{
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .mensagem h1 {
@@ -96,8 +95,6 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f3;
-    border: 3px solid #f8d707;
 }
 
 .sobre h1 {
@@ -108,38 +105,38 @@ body{
 }
 
 .sobre p {
-    color: #060D1A;
+    color: #f2f2f3;
     font-size: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    text-align: justify;
+    text-align: center;
+}
+
+.sobre strong{
+    color: #e63946;
 }
 
 /* Conteúdo */
+.conteudo-container {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
 .conteudo h1{
     color: #DB3328;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Estilo do contêiner do carrossel */
 .carousel-container {
     position: relative;
     max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-}
-  
-  /* Estilo da área do carrossel (as imagens e legendas) */
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
     margin: auto;
     overflow: hidden;
     border: 2px solid #ddd;
@@ -161,13 +158,17 @@ body{
 
 .carousel-slide img {
     width: 100%;
+    height: auto;
+    max-height: 600px;
     border-radius: 10px 10px 0 0;
 }
 
 .carousel-slide figcaption {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
+    height: auto;
     padding: 10px;
+    font-size: 20px;
     border-radius: 0 0 10px 10px;
 }
 
@@ -193,4 +194,146 @@ button.prev {
 
 button.next {
     right: 10px;
+}
+
+/* Motivo */
+.motivo-container {
+    height: 60vh;
+    padding-top: 16px;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 70px;
+}
+
+.motivo {
+    margin: 24px;
+}
+
+.motivo #greeting {
+    color: #DB3328;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Scroll */
+.offer_scroll-container {
+    margin: 24px;
+    overflow-y: auto;
+}
+
+.offer_scroll-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer_scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+/* FIM SCROLL */
+
+.offer_list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+
+      /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
+    display: grid;
+    gap: 16px;
+    grid-gap: 32px;
+    margin: 0 auto;
+}
+
+.cards {
+    margin-top: 30px;
+    position: relative;
+    width: 300px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: linear-gradient(to top, #212529, #343a40, #495057, #6c757d );
+    border: 3px solid #ddd;
+}
+
+.cards span h3{
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+    position: absolute;
+    color: #8ebdd0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cards span p{
+    text-align: center;
+    padding: 16px;
+    color: #f2f2f3;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 90px;
+}
+
+.offer_list-item img {
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    align-items: center;
+    float: right;
+    margin-right: 30px;
+}
+
+/* Perguntas */
+.faq-container {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    margin-top: -1px;
+    font-size: 14px;
+}
+
+.active {
+    display: block;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
 }
